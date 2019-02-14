@@ -1,4 +1,4 @@
-# Python script to download all the audio files of the famous podcast by @Wesbos and @Stsdf
+# Python script to download all the audio files of the famous podcast by [@wesbos](https://twitter.com/wesbos) and [@stolinski](https://twitter.com/stolinski)
 
 Check out the podcast at [here](https://syntax.fm/)
 
