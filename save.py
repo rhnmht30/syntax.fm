@@ -14,6 +14,17 @@ while True:
         url = 'https://traffic.libsyn.com/syntax/Syntax'+str(i)+'.mp3'
     if(i == j + 1):
         break
+
+    try:
+        u = urllib.request.urlopen(url)
+    except:
+        ch = input(
+            'Sorry! URL returned a 404, want to enter a custom URL (y/n): ')
+        if(ch == 'y' or ch == 'Y'):
+            url = input('Enter the URL: ')
+        else:
+            break
+
     file_name = url.split('/')[-1]
     u = urllib.request.urlopen(url)
     f = open(file_name, 'wb')
